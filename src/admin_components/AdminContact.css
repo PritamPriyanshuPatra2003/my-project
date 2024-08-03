@@ -1,0 +1,133 @@
+.contactus-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .contactus-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+    margin-left: -880px;
+  }
+  
+  .contactus-container h2 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .contact-us-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .stay-updated {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    background-color: #f7f3eb;
+     padding: 10px; 
+    margin-top:-353px;
+    height:388px;
+    border-right: 4px solid #b38f8f;
+
+  }
+  
+  .stay-updated h2{
+    margin-top: -190px;
+    font-size:xx-large;
+  }
+  .stay-updated p {
+    margin-top:5px;
+  }
+  
+  .stay-updated a {
+    color: #333;
+    text-decoration: none;
+    margin-top:5px;
+    
+  }
+  
+  .stay-updated a:hover {
+    text-decoration: underline;
+  }
+  
+  .contact-form {
+    width: 65%;
+    background-color: #f7f3eb;
+    border: 4px solid #b38f8f;
+    padding: 30px;
+    height: 350px;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 50%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #e0dcd4;
+    background-color:#b38f8f;
+    color: #333;
+    font-size: 1em;
+    margin-left:48%;
+  }
+  
+  .contact-form button {
+    padding: 15px 20px;
+    background-color: #d1c0a9;
+    color: #000;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width:20%;
+    align-self: flex-end;
+    margin-right: 32%;
+    
+  }
+  
+  .contact-form button:hover {
+    background-color: #b19b7f;
+  }
+  
+  .form-input::placeholder {
+    color: #ffffff;
+  }
+  @media (max-width: 768px) {
+    .contact-us-content {
+      flex-direction: column;
+    }
+  
+    .contact-form,
+    .stay-updated {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .contact-form button {
+      width: 100%;
+    }
+  }
+  .contact-error-message {
+    color: red;
+    margin-left: 750px;
+    margin-top:-34px;
+  }

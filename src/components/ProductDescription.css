@@ -1,0 +1,84 @@
+ .description-container {
+    text-align: center;
+    margin-left: 150px;
+    margin-top: 70px;
+    width: 76%;
+    background-color:#fff9f0;
+    height: 570px;
+    margin-bottom: 150px;
+  }
+  
+  .brand-name {
+    font-size:40px;
+    margin-bottom: 20px;
+    font-weight:400;
+  }
+  .Bck{
+    background-color: #A8A6A6;
+    height: 730px;
+    margin-top: -22px;
+  }
+  
+  .description-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 150px;
+    margin-left: 100px;
+  }
+  
+  .description-content img {
+    width: 40%;
+    height: auto;
+    margin-left:650px;
+    margin-bottom: 20px;
+  }
+  
+  .description-content h2{
+    margin-top: -130px;
+    
+  }
+  .description-content h3 {
+    font-weight: bold;
+    margin-top: 75px;
+    border-bottom: 1px solid black;
+  
+  }
+  .pltcnt{
+margin-top: -300px;
+  }
+
+  
+  
+  .description-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top:-15px;
+  }
+  
+  .description-content ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .description-content ul li {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  .contact-us19{
+    position: absolute;
+     margin-top:-65px;
+    right: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #000;
+    border-radius:25px;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 240px;
+    
+  } 
+   
+  

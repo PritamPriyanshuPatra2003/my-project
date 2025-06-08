@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+# 🎤 Analog IC Design Documentation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository documents various aspects of analog integrated circuit (IC) design with examples, circuit images, simulations, and system-level analysis. It is structured for quick understanding and reference for students and enthusiasts in electronics and communication.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📑 Table of Contents
 
-### `npm start`
+1. [USB Microphone System Analysis](#1-usb-microphone-system-analysis)  
+2. [Fundamental Analog Concepts](#2-fundamental-analog-concepts)  
+3. [Biasing and Operating Point](#3-biasing-and-operating-point)  
+4. [Small Signal Analysis](#4-small-signal-analysis)  
+5. [Analog Building Blocks](#5-analog-building-blocks)  
+6. [Tools and Simulation](#6-tools-and-simulation)  
+7. [Challenges in Analog Design](#7-challenges-in-analog-design)  
+8. [Future Trends in Analog ICs](#8-future-trends-in-analog-ics)  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 1. USB Microphone System Analysis
 
-### `npm test`
+This section explains the analog front-end of a USB microphone setup and its role in signal conditioning and conversion.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img src="./i/>
 
-### `npm run build`
+**System Overview**:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **MEMS Microphone (SPH8878LR5H-1)**: Captures sound and outputs an analog voltage signal.
+- **Amplification & Filtering**: The analog signal passes through a coupling capacitor and resistor, then enters an op-amp (OPA344) for amplification and noise filtering.
+- **Analog to Digital Conversion (ADC)**: The conditioned analog signal is fed into an Arduino’s 10-bit ADC.
+- **Digital Processing and USB Output**: The microcontroller processes the data and outputs it as USB-MIDI to a host device.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> 🎧 This design enables real-time conversion of sound into USB-MIDI digital data using analog IC techniques.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 2. Fundamental Analog Concepts
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Basic electrical laws and principles that form the building blocks of analog circuit analysis and design.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Ohm’s Law & Kirchhoff’s Laws  
+- Voltage and Current Division  
+- Small Signal Modeling  
+- Frequency Response Basics
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 3. Biasing and Operating Point
 
-## Learn More
+Establishing the correct DC operating conditions for active devices like transistors and op-amps.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+📄 [View PDF on Biasing](./pdfs/biasing_tutorial.pdf)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 4. Small Signal Analysis
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Understanding how circuits respond to small input signals using linear approximations.
 
-### Analyzing the Bundle Size
+- Incremental Models  
+- Midband Gain  
+- Input/Output Impedance
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 5. Analog Building Blocks
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Common subcircuits used in analog ICs:
 
-### Advanced Configuration
+- Differential Pairs  
+- Current Mirrors  
+- Voltage References  
+- Analog Filters  
+- Operational Amplifiers
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 6. Tools and Simulation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Popular tools for design and verification:
 
-### `npm run build` fails to minify
+- LTspice  
+- Cadence Virtuoso  
+- Ngspice  
+- Spectre
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Simulation types: DC, AC, Transient, Noise
+
+---
+
+## 7. Challenges in Analog Design
+
+- Device mismatch  
+- Power vs. performance trade-offs  
+- Layout sensitivity  
+- Temperature variations
+
+✅ Best Practice:
